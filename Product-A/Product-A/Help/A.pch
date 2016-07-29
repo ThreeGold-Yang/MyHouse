@@ -1,0 +1,93 @@
+//
+//  A.pch
+//  Product-A
+//
+//  Created by lanou on 16/6/24.
+//  Copyright © 2016年 抖腿宅. All rights reserved.
+//
+
+#ifndef A_pch
+#define A_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "UIView+TWFrame.h"
+#import <MJRefresh.h>
+#import <UIKit/UIKit.h>
+#import "NSString+Html.h"
+#import <MJRefresh.h>
+#import "justHeight.h"
+#import "CarouselView.h"
+#import <AFNetworking.h>
+#import "AFNetRequestManager.h"
+#import "RequestManager.h"
+#import "ScrollerModel.h"
+#import <UIImageView+WebCache.h>
+#import "VideoManager.h"
+#import <AVFoundation/AVFoundation.h>
+#import "DownLoad.h"
+#import "DownLoadManager.h"
+#import <FMDB.h>
+#import "DBManager.h"
+#import "DownMusicTable.h"
+#import "UserInfoManager.h"
+#import "CALayer+PauseAimate.h"
+
+#import "DanmakuView.h"
+#import "YYClipImageTool.h"
+
+
+#import <ShareSDK/ShareSDK.h>
+#import <ShareSDKConnector/ShareSDKConnector.h>
+//腾讯开放平台（对应QQ和QQ空间）SDK头文件
+#import <TencentOpenAPI/TencentOAuth.h>
+#import <TencentOpenAPI/QQApiInterface.h>
+//微信SDK头文件
+#import "WXApi.h"
+//新浪微博SDK头文件
+#import "WeiboSDK.h"
+//新浪微博SDK需要在项目Build Settings中的Other Linker Flags添加"-ObjC"
+
+#import <ShareSDK/ShareSDK.h>
+#import <ShareSDKUI/ShareSDK+SSUI.h>
+
+
+
+
+#define PKCOLOR(R,G,B) [UIColor colorWithRed:(R)/255.0 green:(G)/255.0 blue:(B)/255.0 alpha:1.0]
+#define KNaviH 40
+#define KMoveDistance (kScreenWidth / 5.0)
+#define ScreenW  [UIScreen mainScreen].bounds.size.width
+#define ScreenH  [UIScreen mainScreen].bounds.size.height
+#define placeHoldImageURL   [UIImage imageNamed:@"bj8.jpg"]
+
+
+#define KReadURL @"http://api2.pianke.me/read/columns"
+#define KNoteURL @"http://api2.pianke.me/article/info"
+#define KDetailsURL  @"http://api2.pianke.me/read/columns_detail"
+
+#define KPOSTURL @"http://api2.pianke.me/ting/radio"
+#define KTablePostURL @"http://api2.pianke.me/ting/radio_list"
+#define KMCDetailsURL @"http://api2.pianke.me/ting/radio_detail"
+
+#define KMySqliteName @"宅宅宅.sqlite"
+#define KDownMusicTableName @"宅"
+
+#define kLoginUrl  @"http://api2.pianke.me/user/login" //登录接口的地址
+#define kRegistUrl @"http://api2.pianke.me/user/reg"   //注册接口的地址
+
+#define KLiangPinShouYeURL @"http://api2.pianke.me/pub/shop"
+#define KLiangPinXiangQingURL @"http://api2.pianke.me/group/posts_info"
+#define KPingLunURL @"http://api2.pianke.me/comment/get"
+
+#define KAddPingLunURL @"http://api2.pianke.me/comment/add"
+#define KDeletePingLunURL @"http://api2.pianke.me/comment/del"
+
+#define KHuaTiShouYeUrl @"http://api2.pianke.me/group/posts_hotlist"//话题首页
+#define KHuaTiXiangQinUrl @"http://api2.pianke.me/group/posts_info"//话题详情
+
+
+
+
+#endif /* A_pch */
